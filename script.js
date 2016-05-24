@@ -45,4 +45,71 @@ $(document).ready(function(){
       $(this).on('click', '.item', function(){
         $(this).remove();
       });
+// Trigger an effect as soon as Doc loads. This would go right under line 1 of this file
+    //  $('div').fadeOut('fast');
+
+// Trigger an effect when a certain thing is CLICKED on
+// $('.meteor').click(function(){
+//      $(this).fadeOut('fast');
+//      });
+
+// Trigger an effect when a certain thing is HOVERED on
+     $('.meteor').hover(function(){
+          $(this).addClass('red');
+          });
+// Trigger an effect when a certain thing is DOUBLE-CLICKED on
+      $('.blueBox').dblclick(function(){
+       $(this).fadeOut('slow');
+       });
+
+// Change background color based on user selection
+ $("#color").on("change", function (event) {
+   var color = $(this).val();
+   $("body").css("background-color", color);
+     });
+// <!-- Hover Example -->
+     $('div').hover(
+     function(){
+     $(this).addClass('active');
+     },
+     function(){
+      $(this).removeClass('active');
+     });
+// Name Example
+     $('.nameExample').focus(function(){
+    $(this).css('outline-color', '#FF0000');
+ });
     });
+
+// Keydown Example
+// $(document).keydown(function(){
+//         $('.keydown').animate({left:'+=50px'},500);
+//         });
+// Moving Mario Example
+        $(document).keydown(function(key) {
+          switch(parseInt(key.which,10)) {
+  			// Left arrow key pressed
+  			case 37:
+  				$('.mario').animate({left: "-=10px"}, 'fast');
+  				break;
+  			// Up Arrow Pressed
+  			case 38:
+  				$('.mario').animate({top: "-=10px"}, 'fast');
+  				break;
+  			// Right Arrow Pressed
+  			case 39:
+  				$('.mario').animate({left: "+=10px"}, 'fast');
+  				break;
+  			// Down Arrow Pressed
+  			case 40:
+  				$('.mario').animate({top: "+=10px"}, 'fast');
+  				break;
+  		}
+
+// Moving a sign with Animate
+  // $('.humanSign').animate({ top: '+=100px'}, 1000 );
+
+// Moveable Car Example
+  $('#car').draggable();
+
+  	});

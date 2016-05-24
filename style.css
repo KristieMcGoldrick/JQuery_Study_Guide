@@ -65,3 +65,111 @@ form {
 	color:#cc0000;
 }
 /*END Getting Value from INPUT Form and Button*/
+
+/*START Adding an Event Handler Meteor Example*/
+.meteorBG {
+  background: url(Images/space.jpg);
+}
+
+.meteor {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    /*background-color: #008800;*/
+}
+.red {
+    background-color: #CC0000;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#330000), to(#CC0000));
+    background-image: -webkit-linear-gradient(left, #330000, #CC0000);
+    background-image:    -moz-linear-gradient(left, #330000, #CC0000);
+    background-image:     -ms-linear-gradient(left, #330000, #CC0000);
+    background-image:      -o-linear-gradient(left, #330000, #CC0000);
+}
+/*END Adding an Event Handler Meteor Example*/
+
+/*// Trigger an effect when a certain thing is DOUBLE-CLICKED on*/
+.blueBox {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #ABCDEF;
+}
+
+/*Hover Example*/
+.HomeAboutUsContact {
+    border-radius: 5px;
+    background-color: #ABCDEF;
+    transition: background-color 0.5s ease;
+    display:inline;
+    font-size:25px;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+    margin:10px;
+    border: 30px;
+}
+
+.active {
+    background-color:#556677;
+}
+
+/*KeyDown Example*/
+.keydown {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    position: relative;
+}
+
+/*Moving Mario Example*/
+.mario {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+/*Moving Sign with Animate*/
+.humanSign {
+  position: absolute;
+}
+.bodyOfSign{
+margin: 0;
+padding: 0;
+}
+   /*Moveable Car Example*/
+   #top {
+       position: relative;
+       height: 50px;
+       width: 50px;
+       border-radius: 5px;
+       background-color: #cc0000;
+       left: 25px;
+   }
+   #bottom {
+   	position: relative;
+   	height:25px;
+   	width: 100px;
+   	background-color: #cc0000;
+   	border-top-left-radius: 5px;
+   	border-top-right-radius: 5px;
+   	top: -25px;
+   }
+   #fwheel {
+   	position: relative;
+   	height:20px;
+   	width:20px;
+   	border-radius: 100%;
+   	background-color: black;
+   	top: -35px;
+   	left: 5px;
+   }
+   #bwheel {
+   	position: relative;
+   	height:20px;
+   	width:20px;
+   	border-radius: 100%;
+   	background-color: black;
+   	top: -55px;
+   	left: 75px;
+   }
